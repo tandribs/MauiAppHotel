@@ -3,24 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.Sobre"
              Title="Sobre">
-    <VerticalStackLayout>
+
+    <VerticalStackLayout VerticalOptions="Fill">
         <Label 
             Text="Sobre"
             FontFamily="HostGroteskRegular"
             FontSize="30"
-            TextColor="{StaticResource Naval}"/>
-    </VerticalStackLayout>
+            TextColor="{StaticResource Naval}" />
 
-    <Grid RowDefinitions="Auto, Auto"
+        <Grid RowDefinitions="Auto, Auto"
           ColumnDefinitions="*, *, 2*">
 
-        <Label Grid.Row="0" Grid.Column="0"
-            Text="Desenvolvido por: Thaís R. Andrade"
-            TextColor="{StaticResource White}">
-            
-        <Label Grid.Row="1" Grid.Column="0"
-            Text="Ano: 2024"
-            TextColor="{StaticResource White}">
+            <Label Grid.Row="0" Grid.Column="0"
+               Text="Desenvolvido por: Thaís R. Andrade"
+               TextColor="{StaticResource White}" />
 
-    </Grid>
+            <Label Grid.Row="1" Grid.Column="0"
+               Text="Ano: 2024"
+               TextColor="{StaticResource White}" />
+        </Grid>
+    </VerticalStackLayout>
 </ContentPage>
